@@ -48,7 +48,7 @@ test('TC_Movement_Entry_TS_016', async({page})=>{
     await loginObj.login(username,password);
     const loc=new lrpLoginLocators(page);
     
-    // await expect(loc.homePageLogo).toBeVisible({timeout:10000});
+    await expect(loc.homePageLogo).toBeVisible({timeout:10000});
 
     console.log("Module Name is:",moduleName);
    
